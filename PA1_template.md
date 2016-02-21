@@ -61,12 +61,12 @@ plot(interval$interval,interval$steps,type = "l",xlab = "Interval",ylab = "Steps
 ![](PA1_template_files/figure-html/unnamed-chunk-1-2.png) 
 
 ```r
-interval[which.max(interval$steps),]
+x<- interval[which.max(interval$steps),]
+sprintf("The interval %d has, on average, the highest count of steps, with %f steps.",x[1,1],x[1,2])
 ```
 
 ```
-##     interval    steps
-## 104      835 206.1698
+## [1] "The interval 835 has, on average, the highest count of steps, with 206.169811 steps."
 ```
 
 ```r
